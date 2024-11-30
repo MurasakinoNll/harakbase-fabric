@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "harakbase",
+	"version": "${version}",
+	"name": "harakbase",
+	"description": "faraks base template",
+	"authors": [
+		"farak"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/harakbase/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"harak.base.Harakbase"
+		],
+		"client": [
+		"harak.base.HarakbaseClient"
+		],
+		"fabric-datagen": [
+			"harak.base.HarakbaseDataGenerator"
+		]
+	},
+	"mixins": [
+		"harakbase.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
